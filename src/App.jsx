@@ -1,5 +1,5 @@
 import './App.css'
-
+import Counter from './counter'
 function App() {
   
 function handelClick(){
@@ -14,6 +14,7 @@ const addToFive = (number)=>{
   return (
     <>
       <h3>React Core Concept 2</h3>
+      <Counter></Counter>
      <div id='btnContainer'>
    
      <button onClick={handelClick}>Click 1</button>
