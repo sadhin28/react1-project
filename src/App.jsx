@@ -13,12 +13,15 @@ const addToFive = (number)=>{
 }
   return (
     <>
-     <h3>React Core Concept 2</h3>
+      <h3>React Core Concept 2</h3>
+     <div id='btnContainer'>
+   
      <button onClick={handelClick}>Click 1</button>
      <button onClick={handelClick2}>Click 2</button>
      <button onClick={()=>{alert('click 3')}}>Click 3</button>
-     //parameter pass using arrow function
+     {/* parameter pass using arrow function */}
      <button onClick={()=>addToFive(3)}>AddToFive</button>
+     </div>
     </>
   )
 }
