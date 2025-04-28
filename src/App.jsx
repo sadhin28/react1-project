@@ -3,6 +3,7 @@ import Counter from './counter'
 import Team from './Team'
 import Users from './Users'
 import Friend from './Friend'
+import Friends from './Friends'
 function App() {
   
 function handelClick(){
@@ -18,6 +19,7 @@ const addToFive = (number)=>{
     <>
       <h3>React Core Concept 2</h3>
       <Friend></Friend>
+      
       <Users></Users>
       <Team></Team>
       <Counter></Counter>
