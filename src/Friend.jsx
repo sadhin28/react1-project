@@ -1,12 +1,18 @@
-import { useState } from "react"
-
+import { useEffect, useState } from "react"
+import './Friends.css'
 export default function Friend(){
   
     const [friend,setfriend]=useState([])
-
+    useEffect(()=>{
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then(res =>res.json())
+        .then(data =>{
+            setfriend(data)
+        })
+    },[])
     return(
-        <div>
-            <h1>Friends : </h1>
+        <div className="box">
+            <h3>Friends : {friend.length} </h3>
         </div>
     )
 }

@@ -7,7 +7,7 @@ export default function Users(){
         .then(res=> res.json())
         .then(data =>{
             setusers(data)
-            console.log(data)
+            // console.log(data)
         })
         
     },[])
