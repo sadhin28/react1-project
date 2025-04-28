@@ -1,6 +1,7 @@
 import './App.css'
 import Counter from './counter'
 import Team from './Team'
+import Users from './Users'
 function App() {
   
 function handelClick(){
@@ -15,8 +16,10 @@ const addToFive = (number)=>{
   return (
     <>
       <h3>React Core Concept 2</h3>
+      <Users></Users>
       <Team></Team>
       <Counter></Counter>
+     
      <div id='btnContainer'>
    
      <button onClick={handelClick}>Click 1</button>
