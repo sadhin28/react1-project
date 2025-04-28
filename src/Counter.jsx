@@ -1,7 +1,8 @@
 import { useState } from "react"
 
 export default function Counter(){
-    const [count,setcount]=useState(0);
+    // const [count,setcount]=useState(0);
+    const [count,setcount]=useState(0)
 
     const handleAdd =()=>{
       const newCount = count+1;
@@ -9,7 +10,12 @@ export default function Counter(){
     }
     const handleReduce = ()=>{
         const newCount = count -1;
-        setcount(newCount)
+        if(newCount === -1){
+            setcount(newCount * 0)
+        }else{
+            setcount(newCount)
+        }
+        
     }
     return(
         <div style={
