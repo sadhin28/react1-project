@@ -1,8 +1,9 @@
+import './friends.css'
 export default function Friends({friend}){
    const {name,email}=friend;
 
     return(
-        <div>
+        <div className='box'>
             <h4>Name :{name} </h4>
             <p>Email : {email}</p>
         </div>
